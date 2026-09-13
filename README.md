@@ -11,9 +11,11 @@ A retrieval-augmented Q&A tool: upload PDFs, ask questions, get answers grounded
 ## Tech stack
 Python, ChromaDB, sentence-transformers, Google Gemini API (gemini-3-flash-preview), Flask
 
-## Run locally
-1. `pip install -r requirements.txt`
-2. Add your `GEMINI_API_KEY` to a `.env` file
-3. Put PDFs in `/docs`
-4. `python ingest.py`
-5. `python app.py`
+## How to Run
+ 1. Clone the repository using: git clone https://github.com/farha24-codes/Ai-document-assistant.git then cd Ai-document-assistant
+ 2. Create and activate a virtual environment using: python -m venv venv then venv\Scripts\activate
+ 3. Install dependencies using: pip install -r Requirements.txt
+ 4. Add your Gemini API key by creating a file named api.env in the project root and adding: GEMINI_API_KEY=your_api_key_here (Get a free key at Google AI Studio :https://aistudio.google.com/apikey)
+ 5. Add your PDFs by placing any PDF documents you want to query inside the docs folder.
+ 6. Run ingestion using: python ingest.py which processes your PDFs and stores them in a local vector database.
+ 7. Run the app using: python app.py then open http://127.0.0.1:5000 in your browser and start asking questions.
