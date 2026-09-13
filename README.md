@@ -6,10 +6,10 @@ A retrieval-augmented Q&A tool: upload PDFs, ask questions, get answers grounded
 1. PDFs are split into chunks and converted into embeddings (sentence-transformers)
 2. Chunks are stored in a ChromaDB vector database
 3. On a question, the most relevant chunks are retrieved via semantic search
-4. Claude generates an answer using only that retrieved context (RAG pattern)
+4. Gemini generates an answer using only that retrieved context (RAG pattern)
 
 ## Tech stack
-Python, ChromaDB, sentence-transformers, Google Gemini API (gemini-2.5-flash), Flask
+Python, ChromaDB, sentence-transformers, Google Gemini API (gemini-3-flash-preview), Flask
 
 ## Run locally
 1. `pip install -r requirements.txt`
